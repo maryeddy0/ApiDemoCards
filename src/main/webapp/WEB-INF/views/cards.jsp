@@ -17,7 +17,7 @@
 
 <a href="cards">Shuffle</a>
 
-	<form >
+	<form action="draw-deck">
 		<table>
 			<tr>
 			</tr>

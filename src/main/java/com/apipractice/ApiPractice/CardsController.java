@@ -48,7 +48,7 @@ public class CardsController {
 			headers.add(HttpHeaders.USER_AGENT, "testing");
 
 			ResponseEntity<Cards> c = rt.exchange(url, HttpMethod.GET, new HttpEntity<>("parameters", headers), Cards.class);
-			return new ModelAndView("redirect:/cards", "draw", c);
+			return new ModelAndView("redirect:/cards","draw", c.getBody());
 
 		}
 
